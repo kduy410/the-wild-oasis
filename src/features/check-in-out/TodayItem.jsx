@@ -3,7 +3,7 @@ import Tag from "../../ui/Tag";
 import Button from "../../ui/Button";
 import { Link } from "react-router-dom";
 import Flag from "../../ui/Flag";
-import CheckOutButton from "./CheckOutButton";
+import CheckoutButton from "./CheckoutButton";
 
 const StyledTodayItem = styled.li`
   display: grid;
@@ -43,7 +43,7 @@ export default function TodayItem({ activity }) {
           Check in
         </Button>
       )}
-      {status === "checked-in" && <CheckOutButton bookingId={id} />}
+      {status === "checked-in" && <CheckoutButton bookingId={id} />}
     </StyledTodayItem>
   );
 }
